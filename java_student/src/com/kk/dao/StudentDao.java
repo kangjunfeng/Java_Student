@@ -22,7 +22,7 @@ public interface StudentDao {
 	 * @param stu
 	 * @return
 	 */
-	public boolean delete(Student stu);
+	public boolean delete(String id);
 	
 	/**
 	 * 查找单个学生

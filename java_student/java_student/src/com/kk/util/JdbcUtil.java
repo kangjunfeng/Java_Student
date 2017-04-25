@@ -12,7 +12,7 @@ import com.sun.org.apache.regexp.internal.recompile;
 public class JdbcUtil {
 	private static String DRIVER 	="com.mysql.jdbc.Driver";
 	private static String USER   	="root";
-	private static String PASSWORD  ="root";
+	private static String PASSWORD ="root";
 	private static String URL    	="jdbc::mysql//127.0.0.1:3306/localhost";
 	
 	static{

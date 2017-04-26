@@ -9,12 +9,16 @@ import javax.servlet.http.HttpServletResponse;
 
 public class StudentServlet extends HttpServlet {
 
-	
+	/**
+	 * 
+	 */
 	public void doGet(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html;charset=utf-8");
 	}
 	
-	
+	public  void  addStudent(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException{
+		
+	}
 	
 }

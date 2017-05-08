@@ -1,0 +1,95 @@
+*{margin:0;padding:0;}
+body, html {
+	margin: 0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.line{
+	background-color: black;
+	border-width: 2px;
+	border-color: black;
+}
+.header {
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	background-color: rgb(38,167,148);
+}
+
+.headerLabel{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	font-size: 20px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.content {
+	position:relative;
+	top:50px;
+	width:100%;
+	overflow:hidden;
+	height:auto;
+
+}
+.contentLeft{
+	position: relative;
+	width: 200px;
+	height: auto;
+	border-color: black;
+	border-width: 1px;
+	float: left;
+	background-color: rgb(38,167,148);
+}
+
+.contentLeftHeader{
+	position: relative;
+	width: 200px;
+	height: 60px;
+	background-color: gray;
+	padding-left: 20px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 60px;
+	color: black;
+	float: left;
+}
+
+.contentNav{
+	position: relative;
+	width: 200px;
+	height: 60px;
+	background-color: gray;
+	padding-left: 20px;
+	text-align: left;
+	font-size: 18px;
+	line-height: 60px;
+	color: black;
+	float: left;
+}
+
+.contentRight{
+	position: relative;
+	width: 300px;
+	height: 100%;
+	background-color: red;
+	float: left;
+}
+
+.footer {
+	width: 100%;
+	height: 50px;
+	color: #e1efff;
+	line-height: 50px;
+	letter-spacing: 1px;
+	text-align: center;
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: lightslategrey;
+}

@@ -1,6 +1,5 @@
 package com.kk.dao.impl;
 
-import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,9 +9,6 @@ import java.util.List;
 import com.kk.dao.StudentDao;
 import com.kk.entity.Student;
 import com.kk.util.JdbcUtil;
-import com.sun.corba.se.spi.orbutil.fsm.Guard.Result;
-import com.sun.org.apache.regexp.internal.recompile;
-import com.sun.xml.internal.ws.api.pipe.Tube;
 
 public class StudentDaoImpl implements StudentDao {
 
@@ -23,7 +19,7 @@ public class StudentDaoImpl implements StudentDao {
 		// TODO Auto-generated method stub
 		try {
 			Connection  conn = JdbcUtil.getConnection();
-			String  sql ="insert into Student(id,name,age,sex,email,cellPhone) values(?,?,?,?,?,?)";
+			String  sql ="insert into Student(uuid,name,age,sex,email,cellPhone) values(?,?,?,?,?,?)";
 			PreparedStatement preStmt =conn.prepareStatement(sql);
 			preStmt.setString(1, stu.getId());
 			preStmt.setString(2, stu.getName());
@@ -45,7 +41,7 @@ public class StudentDaoImpl implements StudentDao {
 		// TODO Auto-generated method stub
 		try {
 			Connection  conn = JdbcUtil.getConnection();
-			String  sql ="update  Student  set name =?,age =?,sex=?,email=?,cellPhone=? where id =?";
+			String  sql ="update  Student  set name =?,age =?,sex=?,email=?,cellPhone=? where uuid =?";
 			PreparedStatement preStmt =conn.prepareStatement(sql);
 			preStmt.setString(1, stu.getName());
 			preStmt.setInt(2, stu.getAge());
@@ -61,13 +57,39 @@ public class StudentDaoImpl implements StudentDao {
 			return false;
 		}
 	}
+	
+	@Override
+	public Student findStudentById(String id) {
+		// TODO Auto-generated method stub
+		try {
+			Connection conn =JdbcUtil.getConnection();
+			String sql ="select * from Student  where uuid=?";
+			PreparedStatement preStme = conn.prepareStatement(sql);
+			preStme.setString(2, id);
+		    ResultSet rSet = preStme.executeQuery();
+		    Student   stu = new Student();
+			if (rSet.next()) {
+				stu.setId(id);
+				stu.setName(rSet.getString(3));
+				stu.setAge(rSet.getInt(4));
+				stu.setSex(rSet.getString(5));
+				stu.setEmail(rSet.getString(6));
+				stu.setCellPhone(rSet.getString(7));
+			}
+			return stu;
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			return null;
+		}
+	}
 
 	@Override
 	public boolean delete(String id) {
 		// TODO Auto-generated method stub
 		try {
 			Connection conn =JdbcUtil.getConnection();
-			String sql ="delete from Student where id =?";
+			String sql ="delete from Student where uuid =?";
 			PreparedStatement preStmt =conn.prepareStatement(sql);
 			preStmt.setString(1, id);
 			preStmt.executeUpdate();
@@ -79,50 +101,24 @@ public class StudentDaoImpl implements StudentDao {
 		}
 	}
 
-	@Override
-	public Student findStudentById(String id) {
-		// TODO Auto-generated method stub
-		try {
-			Connection conn =JdbcUtil.getConnection();
-			String sql ="select * from Student  where id=?";
-			PreparedStatement preStme = conn.prepareStatement(sql);
-			preStme.setString(1, id);
-		    ResultSet rSet = preStme.executeQuery();
-		    Student   stu = new Student();
-			if (rSet.next()) {
-				stu.setId(id);
-				stu.setName(rSet.getString(2));
-				stu.setAge(rSet.getInt(3));
-				stu.setSex(rSet.getString(4));
-				stu.setEmail(rSet.getString(5));
-				stu.setCellPhone(rSet.getString(6));
-			}
-			return stu;
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-			return null;
-		}
-		
-	}
 
 	@Override
 	public List<Student> findAll() {
 		// TODO Auto-generated method stub
 		try {
-			List<Student> stuList = new  ArrayList<Student>();
+			List<Student> stuList = new ArrayList<Student>();
 			Connection conn  = JdbcUtil.getConnection();
 			String sql ="select * from Student";
 			PreparedStatement preStmt = conn.prepareStatement(sql);
 			ResultSet rSet =preStmt.executeQuery();
 			while (rSet.next()) {
 				Student stu = new Student();
-				stu.setId(rSet.getString(1));
-				stu.setName(rSet.getString(2));
-				stu.setAge(rSet.getInt(3));
-				stu.setSex(rSet.getString(4));
-				stu.setEmail(rSet.getString(5));
-				stu.setCellPhone(rSet.getString(6));
+				stu.setId(rSet.getString(2));
+				stu.setName(rSet.getString(3));
+				stu.setAge(rSet.getInt(4));
+				stu.setSex(rSet.getString(5));
+				stu.setEmail(rSet.getString(6));
+				stu.setCellPhone(rSet.getString(7));
 				stuList.add(stu);
 			}
 			return stuList;
@@ -132,5 +128,5 @@ public class StudentDaoImpl implements StudentDao {
  			return null;
 		}
 	}
-	
+
 }

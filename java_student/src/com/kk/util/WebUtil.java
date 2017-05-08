@@ -12,6 +12,7 @@ public class WebUtil {
 		T t =null;
 		try {
 			t  = clazz.newInstance();
+			System.out.println("map"+request.getParameterMap());
 			BeanUtils.populate(t, request.getParameterMap());
 		} catch (InstantiationException e) {
 			// TODO: handle exception

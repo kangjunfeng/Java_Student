@@ -13,6 +13,6 @@ public class WebTool {
 		String uuid =UUID.randomUUID().toString().replace("-", "");
 		MessageDigest md5 =MessageDigest.getInstance("MD5");
 		BASE64Encoder baseEn = new BASE64Encoder();
-		return baseEn.encode(md5.digest(uuid.getBytes("UFT-8")));
+		return baseEn.encode(md5.digest(uuid.getBytes("UTF-8")));
 	}
 }

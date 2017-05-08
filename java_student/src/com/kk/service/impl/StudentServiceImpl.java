@@ -5,7 +5,7 @@ import java.util.List;
 import com.kk.dao.impl.StudentDaoImpl;
 import com.kk.entity.Student;
 import com.kk.service.StudentService;
-import com.sun.org.apache.bcel.internal.generic.NEW;
+
 
 public class StudentServiceImpl implements StudentService {
 
@@ -27,17 +27,18 @@ public class StudentServiceImpl implements StudentService {
 		// TODO Auto-generated method stub
 		return stdDao.delete(id);
 	}
-
+	
 	@Override
 	public Student findStudentById(String id) {
 		// TODO Auto-generated method stub
 		return stdDao.findStudentById(id);
 	}
-
+	
 	@Override
 	public List<Student> findAll() {
 		// TODO Auto-generated method stub
 		return stdDao.findAll();
 	}
+
 
 }

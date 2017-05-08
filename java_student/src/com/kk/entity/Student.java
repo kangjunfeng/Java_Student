@@ -1,7 +1,7 @@
 package com.kk.entity;
 
 public class Student {
-	private String id;
+	private String uuid;
 	private String name;
 	private int   age;
 	private String sex;
@@ -9,10 +9,10 @@ public class Student {
 	private String cellPhone;
 	
 	public String getId() {
-		return id;
+		return uuid;
 	}
 	public void setId(String id) {
-		this.id = id;
+		this.uuid = id;
 	}
 	
 	public String getName() {

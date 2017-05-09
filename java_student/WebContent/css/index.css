@@ -1,16 +1,19 @@
 *{margin:0;padding:0;}
-body, html {
+body, html
+{
 	margin: 0;
 	width:100%;
 	height:100%;
 	overflow:hidden;
 }
-.line{
+.line
+{
 	background-color: black;
 	border-width: 2px;
 	border-color: black;
 }
-.header {
+.header
+{
 	width: 100%;
 	height: 50px;
 	overflow: hidden;
@@ -18,7 +21,8 @@ body, html {
 	background-color: rgb(38,167,148);
 }
 
-.headerLabel{
+.headerLabel
+{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
@@ -28,26 +32,24 @@ body, html {
 	margin-left: 20px;
 }
 
-.content {
-	position:relative;
+.content
+{
+	position: relative;
 	top:50px;
 	width:100%;
 	overflow:hidden;
 	height:auto;
-
 }
-.contentLeft{
-	position: relative;
+.contentLeft
+{
 	width: 200px;
 	height: auto;
-	border-color: black;
-	border-width: 1px;
 	float: left;
 	background-color: rgb(38,167,148);
 }
 
-.contentLeftHeader{
-	position: relative;
+.contentLeftHeader
+{
 	width: 200px;
 	height: 60px;
 	background-color: gray;
@@ -59,8 +61,8 @@ body, html {
 	float: left;
 }
 
-.contentNav{
-	position: relative;
+.contentNav
+{
 	width: 200px;
 	height: 60px;
 	background-color: gray;
@@ -72,15 +74,47 @@ body, html {
 	float: left;
 }
 
-.contentRight{
-	position: relative;
-	width: 300px;
-	height: 100%;
-	background-color: red;
+.contentSecNav
+{
+	width: 200px;
+	height: 50px;
+	background-color: white;
+	padding-left: 20px;
+	text-align: left;
+	font-size: 16px;
+	line-height: 60px;
+	color: gray;
 	float: left;
 }
 
-.footer {
+.contentRight
+{
+	margin-left: 20px;
+	height: auto;
+	float: left;
+	background-color: rgb(38,167,148);
+}
+
+.contentRightHeader
+{
+	padding-left: 20px;
+	height:60px;
+	background-color: gainsboro;
+	float: left;
+	padding-top: 20px;
+	line-height: 40px;
+}
+
+.contentRightBody
+{
+	width: auto;
+	height: auto;
+	background-color: gainsboro;
+	float: left;
+}
+
+.footer
+{
 	width: 100%;
 	height: 50px;
 	color: #e1efff;

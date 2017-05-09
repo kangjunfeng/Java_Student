@@ -21,13 +21,17 @@
 		<!-- left -->
 		<div class="contentLeft">
 			<div class="contentLeftHeader">功能菜单</div>
-			<div class="line"></div>
 			<div class="contentNav">用户管理</div>
-			<div class="line"></div>
+			<div class="contentSecNav">学生列表</div>
+			<div class="contentSecNav">添加学生</div>
 		</div>
 		
 		<!-- right -->
-		<!-- <div class="contentRight">12334</div> -->
+		<div class="contentRight">
+			<div class="contentRightHeader">您所在的位置->用户管理->学生列表、。。。。。。。。。</div>
+			<hr>
+			<!--<div class="contentRightBody"><iframe>1</iframe></div>-->
+		</div>
 	</div>
 
 	<div class="footer">

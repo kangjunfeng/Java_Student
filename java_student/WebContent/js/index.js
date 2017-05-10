@@ -1,7 +1,14 @@
-
 window.onload = function () {
-    var left =document.getElementsByClassName("contentLeft");
-    left.height =window.height-200;
+     // var leftClass =document.getElementsByClassName("contentLeft");
+     // leftClass.style.height =window.screen.height-200;
+     //
+	 var rightClass =document.getElementsByClassName("contentRight");
+	 rightClass.height =window.screen.height-"200px";
+
+//	 var iframeClass =document.getElementsByClassName("contentIFrame");
+//	 iframeClass.height =window.screen.height-"200px";
+
+	 
 }
 
 function  showOrHiddenNav(controlID) {

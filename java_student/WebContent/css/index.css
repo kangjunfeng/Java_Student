@@ -36,11 +36,10 @@ body, html
 {
 	position: relative;
 	top:50px;
-	width: 20%;
+	width: 15%;
 	height: auto;
 	float: left;
-	background-color: gray;
-	box-sizing: border-box;
+	background-color: rgb(234,235,236);
 }
 
 .leftNavTitle{
@@ -56,6 +55,8 @@ body, html
 	line-height: 60px;
 	color: black;
 	float: left;
+	border-bottom-width: 1px;
+	border-bottom-color: black;
 }
 
 .contentNav
@@ -65,9 +66,8 @@ body, html
 	text-align: left;
 	font-size: 18px;
 	line-height: 60px;
-	color: black;
+	color: rgb(38,167,148);;
 	float: left;
-	display: block;
 }
 
 .contentSecNav
@@ -75,10 +75,10 @@ body, html
 	position: relative;
 	width: 100%;
 	height: 50px;
-	text-align: left;
-	font-size: 16px;
+	text-align: center;
+	font-size: 14px;
 	line-height: 50px;
-	color: white;
+	color: rgb(38,167,148);;
 	float: left;
 	background-color: #e1efff;
 	display: block;
@@ -88,10 +88,10 @@ body, html
 {
 	position: relative;
 	top:50px;
-	width:80%;
+	width:85%;
 	height: auto;
 	float: right;
-	background-color: lightgray;
+	background-color: rgb(244,245,246);
 	box-sizing: border-box;
 }
 
@@ -108,10 +108,11 @@ body, html
 	line-height: 40px;
 }
 
-.contentIframe{
+.contentIFrame{
 	width: 100%;
 	height: auto;
 }
+
 .contentRightBody
 {
 	width: auto;

@@ -22,26 +22,43 @@
 		<!-- left -->
 		<div class="contentLeft">
 			<div class="contentLeftHeader"><p class="leftNavTitle">功能菜单</p></div>
+			<hr>
 			<div class="contentNav" onclick="showOrHiddenNav('s1')">
-					<p class="leftNavTitle">用户管理</p>	 	
+				<p class="leftNavTitle">用户管理</p>	 	
 			</div>
 			<div id ="s1"  class="contentSecNav">
-						<ul>
-							<li class="contentSecNav"><a class="leftNavTitle">学生列表</a></li>
-							<li class="contentSecNav"><a class="leftNavTitle">添加学生</a></li>
-						</ul>
-					</div>
-			<div class="contentNav"><p class="leftNavTitle">综合管理</p></div>
+				<ul>
+					<li class="contentSecNav"><a class="leftNavTitle" href="${pageContext.request.contextPath}/StudentServlet?select=all" target="iframe">学生列表</a></li>
+					<li class="contentSecNav"><a class="leftNavTitle">添加学生</a></li>
+				</ul>
+			</div>
+            <div class="contentNav" onclick="showOrHiddenNav('s1')">
+                <p class="leftNavTitle">用户管理</p>
+            </div>
+            <div class="contentNav" onclick="showOrHiddenNav('s1')">
+                <p class="leftNavTitle">用户管理</p>
+            </div>
+            <div class="contentNav" onclick="showOrHiddenNav('s1')">
+                <p class="leftNavTitle">用户管理</p>
+            </div>
+            <div class="contentNav" onclick="showOrHiddenNav('s1')">
+                <p class="leftNavTitle">用户管理</p>
+            </div>
+            <div class="contentNav" onclick="showOrHiddenNav('s1')">
+				<p class="leftNavTitle">用户管理</p>	 	
+			</div>
+			<div class="contentNav" onclick="showOrHiddenNav('s1')">
+				<p class="leftNavTitle">用户管理</p>	 		 	
+			</div>
+			
 		</div>
 		
 		<!-- right -->
 		<div class="contentRight">
-			<div class="contentRightHeader"><p class="rightNavTitle"><a>您所在的位置</a>--><a>用户管理</a>-><a>学生列表</a></p></div>
+			<div class="contentRightHeader"><p class="rightNavTitle">您所在的位置->用户管理->学生列表</p></div>
 				<hr>
-				<!--<div class="contentRightBody"><iframe>1</iframe></div>-->
-			</div>
+            <div><iframe class="contentIFrame" name="iframe">123</iframe></div>
 		</div>
-
 	<div class="footer">
    	 	<label>Copyright@2017 kk 版权所有</label>
 	</div> 

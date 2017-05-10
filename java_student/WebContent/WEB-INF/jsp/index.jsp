@@ -10,6 +10,7 @@
 	<base href="<%=basePath%>"> 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 	<link rel="stylesheet" type="text/css" href="<%=path %>/css/index.css"/>
+	<script type="text/javascript"  src="<%=path %>/js/index.js"></script>
 	<title>index</title>
 </head>
 <body>
@@ -17,22 +18,29 @@
  	   <label class="headerLabel">学生管理系统</label>
 	</div>
 	
-	<div class="content">
+	<!--<div class="content">-->
 		<!-- left -->
 		<div class="contentLeft">
-			<div class="contentLeftHeader">功能菜单</div>
-			<div class="contentNav">用户管理</div>
-			<div class="contentSecNav">学生列表</div>
-			<div class="contentSecNav">添加学生</div>
+			<div class="contentLeftHeader"><p class="leftNavTitle">功能菜单</p></div>
+			<div class="contentNav" onclick="showOrHiddenNav('s1')">
+					<p class="leftNavTitle">用户管理</p>	 	
+			</div>
+			<div id ="s1"  class="contentSecNav">
+						<ul>
+							<li class="contentSecNav"><a class="leftNavTitle">学生列表</a></li>
+							<li class="contentSecNav"><a class="leftNavTitle">添加学生</a></li>
+						</ul>
+					</div>
+			<div class="contentNav"><p class="leftNavTitle">综合管理</p></div>
 		</div>
 		
 		<!-- right -->
 		<div class="contentRight">
-			<div class="contentRightHeader">您所在的位置->用户管理->学生列表、。。。。。。。。。</div>
-			<hr>
-			<!--<div class="contentRightBody"><iframe>1</iframe></div>-->
+			<div class="contentRightHeader"><p class="rightNavTitle"><a>您所在的位置</a>--><a>用户管理</a>-><a>学生列表</a></p></div>
+				<hr>
+				<!--<div class="contentRightBody"><iframe>1</iframe></div>-->
+			</div>
 		</div>
-	</div>
 
 	<div class="footer">
    	 	<label>Copyright@2017 kk 版权所有</label>

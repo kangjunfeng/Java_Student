@@ -32,28 +32,25 @@ body, html
 	margin-left: 20px;
 }
 
-.content
+.contentLeft
 {
 	position: relative;
 	top:50px;
-	width:100%;
-	overflow:hidden;
-	height:auto;
-}
-.contentLeft
-{
-	width: 200px;
+	width: 20%;
 	height: auto;
 	float: left;
-	background-color: rgb(38,167,148);
+	background-color: gray;
+	box-sizing: border-box;
+}
+
+.leftNavTitle{
+	padding-left: 20px;
 }
 
 .contentLeftHeader
 {
-	width: 200px;
+	width: 100%;
 	height: 60px;
-	background-color: gray;
-	padding-left: 20px;
 	text-align: left;
 	font-size: 18px;
 	line-height: 60px;
@@ -63,48 +60,58 @@ body, html
 
 .contentNav
 {
-	width: 200px;
+	width: 100%;
 	height: 60px;
-	background-color: gray;
-	padding-left: 20px;
 	text-align: left;
 	font-size: 18px;
 	line-height: 60px;
 	color: black;
 	float: left;
+	display: block;
 }
 
 .contentSecNav
 {
-	width: 200px;
+	position: relative;
+	width: 100%;
 	height: 50px;
-	background-color: white;
-	padding-left: 20px;
 	text-align: left;
 	font-size: 16px;
-	line-height: 60px;
-	color: gray;
+	line-height: 50px;
+	color: white;
 	float: left;
+	background-color: #e1efff;
+	display: block;
 }
 
 .contentRight
 {
-	margin-left: 20px;
+	position: relative;
+	top:50px;
+	width:80%;
 	height: auto;
-	float: left;
-	background-color: rgb(38,167,148);
+	float: right;
+	background-color: lightgray;
+	box-sizing: border-box;
+}
+
+.rightNavTitle{
+	padding-left: 20px;
+	padding-top: 20px;
 }
 
 .contentRightHeader
 {
-	padding-left: 20px;
+	width: 100%;
 	height:60px;
-	background-color: gainsboro;
 	float: left;
-	padding-top: 20px;
 	line-height: 40px;
 }
 
+.contentIframe{
+	width: 100%;
+	height: auto;
+}
 .contentRightBody
 {
 	width: auto;

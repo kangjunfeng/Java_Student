@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(234,235,236);
+}
+.loginDiv{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+
+#user,#pass{
+    width: 350px;
+    height: 50px;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 15px;
+    vertical-align: middle;
+    margin-top: 15px;
+    line-height: 40px;
+    font-size: 20px;
+    overflow: hidden;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+
+#user{
+    top: 50px;
+    background: url("../resource/login_user.png") no-repeat 10px center / 40px 40px;
+}
+
+
+#pass{
+    background: url("../resource/login_pass.png") no-repeat 10px center / 40px 40px;
+}
+
+
+.loginBtn{
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    vertical-align: middle;
+    margin-top: 15px;
+    border-width: 0;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: rgb(38,168,147);
+}

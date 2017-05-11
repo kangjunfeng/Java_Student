@@ -15,7 +15,8 @@
 </head>
 <body>
 	<div class="header">
- 	   <label class="headerLabel">学生管理系统</label>
+ 	   <label class="headerLabel">学生管理系统
+ 	   </label>
 	</div>
 	
 	<!--<div class="content">-->

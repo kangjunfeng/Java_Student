@@ -7,8 +7,8 @@
 <title>Add Student</title>
 </head>
 <body>
-	<h1 align="center">添加学生信息</h1>
-    <hr>
+	<!-- <h1 align="center">添加学生信息</h1> -->
+    <!--  <hr> -->
     <form action="${pageContext.request.contextPath }/StudentServlet?select=add" method="post">
         <table align="center" border="0.5">
             <tr>

@@ -6,6 +6,19 @@ body, html
 	height:100%;
 	overflow:hidden;
 }
+
+a{
+	color: rgb(38,167,148);
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+}
+a:visited{
+	color: rgb(38,167,148);
+}
+
 .line
 {
 	background-color: black;
@@ -111,6 +124,7 @@ body, html
 .contentIFrame{
 	width: 100%;
 	height: auto;
+	border-width: 0;
 }
 
 .contentRightBody

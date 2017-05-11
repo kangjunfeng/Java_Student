@@ -1,13 +1,12 @@
 window.onload = function () {
      // var leftClass =document.getElementsByClassName("contentLeft");
      // leftClass.style.height =window.screen.height-200;
-     //
-	 var rightClass =document.getElementsByClassName("contentRight");
-	 rightClass.height =window.screen.height-"200px";
 
-//	 var iframeClass =document.getElementsByClassName("contentIFrame");
-//	 iframeClass.height =window.screen.height-"200px";
+	 var leftNav =document.getElementById("leftNav");
+	 leftNav.style.height =window.screen.height-200+"px";
 
+	 var iframe = document.getElementById("iframe");
+	 iframe.style.height =window.screen.height-260+"px";
 	 
 }
 

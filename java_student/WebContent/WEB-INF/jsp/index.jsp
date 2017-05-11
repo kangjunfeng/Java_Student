@@ -20,7 +20,7 @@
 	
 	<!--<div class="content">-->
 		<!-- left -->
-		<div class="contentLeft">
+		<div id="leftNav" class="contentLeft">
 			<div class="contentLeftHeader"><p class="leftNavTitle">功能菜单</p></div>
 			<hr>
 			<div class="contentNav" onclick="showOrHiddenNav('s1')">
@@ -28,45 +28,20 @@
 			</div>
 			<div id ="s1"  class="contentSecNav">
 				<ul>
-					<li class="contentSecNav"><a class="leftNavTitle" href="${pageContext.request.contextPath}/StudentServlet?select=all" target="iframe">学生列表</a></li>
-					<li class="contentSecNav"><a class="leftNavTitle">添加学生</a></li>
+					<li class="contentSecNav"><a class="leftNavTitle"  href="${pageContext.request.contextPath}/StudentServlet?select=all" target="iframe">学生列表</a></li>
+					<li class="contentSecNav"><a class="leftNavTitle"  href="${pageContext.request.contextPath}/StudentServlet?select=add" target="iframe">添加学生</a></li>
 				</ul>
 			</div>
-            <div class="contentNav" onclick="showOrHiddenNav('s1')">
-                <p class="leftNavTitle">用户管理</p>
-            </div>
-            <div class="contentNav" onclick="showOrHiddenNav('s1')">
-                <p class="leftNavTitle">用户管理</p>
-            </div>
-            <div class="contentNav" onclick="showOrHiddenNav('s1')">
-                <p class="leftNavTitle">用户管理</p>
-            </div>
-            <div class="contentNav" onclick="showOrHiddenNav('s1')">
-                <p class="leftNavTitle">用户管理</p>
-            </div>
-            <div class="contentNav" onclick="showOrHiddenNav('s1')">
-				<p class="leftNavTitle">用户管理</p>	 	
-			</div>
-			<div class="contentNav" onclick="showOrHiddenNav('s1')">
-				<p class="leftNavTitle">用户管理</p>	 		 	
-			</div>
-			
 		</div>
 		
 		<!-- right -->
 		<div class="contentRight">
 			<div class="contentRightHeader"><p class="rightNavTitle">您所在的位置->用户管理->学生列表</p></div>
 				<hr>
-            <div><iframe class="contentIFrame" name="iframe">123</iframe></div>
+            <div><iframe id="iframe" class="contentIFrame" name="iframe"></iframe></div>
 		</div>
 	<div class="footer">
    	 	<label>Copyright@2017 kk 版权所有</label>
 	</div> 
-
-	
-	<%-- 
-  	<a href="${pageContext.request.contextPath}/StudentServlet?select=all">显示所有信息</a>
-  	<br/>
-  	<a href="${pageContext.request.contextPath}/StudentServlet?select=add">添加学生信息</a>  --%>
 </body>
 </html>

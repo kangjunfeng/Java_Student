@@ -14,8 +14,8 @@
     <title>List</title>
 </head>
 <body>
-    <h1 style="text-align: center;">学生信息</h1>
-    <hr>
+    <!--   <h1 style="text-align: center;">学生信息</h1> -->
+    <!--  <hr> -->
     <table class="tablee">
         <tr>
             <td>

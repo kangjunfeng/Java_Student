@@ -8,7 +8,7 @@ window.onload = function () {
 	 var iframe = document.getElementById("iframe");
 	 iframe.style.height =window.screen.height-260+"px";
 	 
-}
+};
 
 function  showOrHiddenNav(controlID) {
 	var secNav = document.getElementById(controlID);

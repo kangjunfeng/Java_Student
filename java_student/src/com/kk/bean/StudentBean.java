@@ -57,14 +57,13 @@ public class StudentBean {
 		this.cellPhone = cellPhone;
 	}
 	
-	public boolean validate(){
-	        
-	        //验证姓名
+	public boolean validate(){      
+	    //验证姓名
 	    if(name == "" || name == null){
 	        errors.put("name", "用户名或密码不能为空");
 	        System.out.println("用户名或密码不能为空");
 	    }else {
-	        if(name.length() < 3 || name.length() > 8){
+	        if(name.length() < 3 || name.length() > 15){
 	            errors.put("name","名字长度在3-8之间");
 	            System.out.println("名字长度在3-8之间");
 	        }

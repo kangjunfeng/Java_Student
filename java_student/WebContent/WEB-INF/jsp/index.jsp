@@ -25,12 +25,12 @@
 			<div class="contentLeftHeader"><p class="leftNavTitle">功能菜单</p></div>
 			<hr>
 			<div class="contentNav" onclick="showOrHiddenNav('s1')">
-				<p class="leftNavTitle">用户管理</p>	 	
+				<img class="fNavImg" src="<%=basePath%>/resource/index_list.png">用户管理
 			</div>
 			<div id ="s1"  class="contentSecNav">
 				<ul>
-					<li class="contentSecNav"><a class="leftNavTitle"  href="${pageContext.request.contextPath}/StudentServlet?select=all" target="iframe">学生列表</a></li>
-					<li class="contentSecNav"><a class="leftNavTitle"  href="${pageContext.request.contextPath}/StudentServlet?select=add" target="iframe">添加学生</a></li>
+					<li class="contentSecNav"><img class="secNavImg" src="<%=basePath%>/resource/index_arrow.png"><a class="leftNavTitle" href="${pageContext.request.contextPath}/StudentServlet?select=all" target="iframe">学生列表</a></li>
+					<li class="contentSecNav"><img class="secNavImg" src="<%=basePath%>/resource/index_arrow.png"><a class="leftNavTitle"  href="${pageContext.request.contextPath}/StudentServlet?select=add" target="iframe">添加学生</a></li>
 				</ul>
 			</div>
 		</div>

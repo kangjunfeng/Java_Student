@@ -1,11 +1,15 @@
 package com.kk.servlet;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Set;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 
 /**
  * Servlet implementation class ManagerServlet
@@ -28,7 +32,11 @@ public class ManagerServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("texthtml;charset=utf-8");
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		//json
+		request.getSession().setAttribute("userMsg", "");
+		response.sendRedirect(request.getContextPath()+"/index");
+		
 	}
 
 	/**

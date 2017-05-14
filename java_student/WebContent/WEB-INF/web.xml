@@ -3,9 +3,15 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- servlet -->
   <servlet>
     <servlet-name>StudentServlet</servlet-name>
     <servlet-class>com.kk.servlet.StudentServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ManagerServlet</servlet-name>
+    <servlet-class>com.kk.servlet.ManagerServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>index</servlet-name>
@@ -23,13 +29,19 @@
     <servlet-name>update</servlet-name>
     <jsp-file>/WEB-INF/jsp/update.jsp</jsp-file>
   </servlet>
+  
+  <!-- servlet-mapping  -->
   <servlet-mapping>
     <servlet-name>StudentServlet</servlet-name>
     <url-pattern>/StudentServlet</url-pattern>
   </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ManagerServlet</servlet-name>
+    <url-pattern>/ManagerServlet</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>index</servlet-name>
-    <url-pattern>/index.jsp</url-pattern>
+    <url-pattern>/index</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
     <servlet-name>List</servlet-name>
@@ -50,5 +62,13 @@
   <servlet-mapping>
     <servlet-name>default</servlet-name>
     <url-pattern>*.js</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
   </servlet-mapping>
 </web-app>
